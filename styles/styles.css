@@ -1,0 +1,52 @@
+/* root variables for base color scheme */
+:root {
+  /* Primary Brand Colors */
+  --primary: #ff9900; /* AWS Orange */
+  --secondary: #f5f5f5; /* Cloud Gray */
+  --accent: #007fff; /* Deep Sky Blue */
+
+  /* Text Colors */
+  --text-primary: #222222;
+  --text-secondary: #555555;
+
+  /* Backgrounds */
+  --background: #ffffff;
+  --card-background: #f5f5f5;
+
+  /* Borders / Dividers */
+  --border: #e0e0e0;
+
+  /* font family and weight */
+  --font: "Open Sans", sans-serif;
+
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+}
+
+/* color scheme for dark mode */
+.dark-mode {
+  --primary: #ff9900; /* AWS Orange */
+  --secondary: #1e1e1e; /* Dark Gray */
+  --accent: #00bfff; /* Cyan Blue */
+
+  /* Text Colors */
+  --text-primary: #ffffff;
+  --text-secondary: #aaaaaa;
+
+  /* Backgrounds */
+  --background: #121212;
+  --card-background: #1e1e1e;
+
+  /* Borders */
+  --border: #444444;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font);
+  background-color: var(--background);
+  color: var(--text-primary);
+}
