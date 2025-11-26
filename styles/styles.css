@@ -1,3 +1,9 @@
+/*
+    tablet = 768px
+    laptop = 992px
+    desktop = 1200px
+*/
+
 /* root variables for base color scheme */
 :root {
   /* Primary Brand Colors */
@@ -43,10 +49,108 @@
   --border: #444444;
 }
 
-body {
+* {
   margin: 0;
   padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+/*centers the page */
+
+body {
+  min-height: 100vh; /* set min hieght to be size of the view port*/
+  width: 80%; /* apply width to entire page to get the spaced look */
   font-family: var(--font);
   background-color: var(--background);
   color: var(--text-primary);
+  padding-top: 120px;
+}
+
+a,
+a:hover,
+a:visited,
+a:focus,
+a:active {
+  text-decoration: none !important;
+  color: var(--text-primary);
+}
+
+ul {
+  list-style-type: none;
+}
+
+header {
+  position: fixed; /* floating nav */
+  top: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: 90%;
+  max-width: 1200px;
+  padding: 1rem 2rem;
+
+  background-color: var(--card-background);
+  border-radius: 10px;
+  border: 1px solid var(--border);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  z-index: 999;
+}
+
+/* hides the toggle menu only shows the label */
+
+nav {
+  position: absolute;
+  background: white;
+  box-shadow: 0 2px 2px #3a3a3a;
+  width: 100%;
+  left: 0;
+  padding: 0 1rem;
+  display: none;
+  top: 100%;
+  background-color: var(--card-background);
+  border-radius: 10px;
+}
+#menu {
+}
+
+#nav-toggle {
+  display: none;
+}
+
+#nav-toggle:checked ~ nav {
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  header {
+  }
+  nav {
+    position: relative;
+    display: flex; /* enable flexbox */
+    justify-content: center; /* or space-between / flex-end */
+    align-items: center;
+    gap: 2rem; /* spacing between items */
+    background: none;
+    border: none;
+    box-shadow: none;
+  }
+
+  #menu {
+    display: flex;
+    margin: 0 auto;
+    gap: 2rem;
+    flex: end;
+  }
+
+  .nav-toggle-label {
+    display: none;
+  }
 }
