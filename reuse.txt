@@ -11,3 +11,7 @@ saved code
   background-color: var(--card-background);
   border-radius: 10px;
   border: 1px solid black;
+
+
+
+  remember order of importance meadia queries do not overide if styling is changed after it. 

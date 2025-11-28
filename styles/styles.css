@@ -63,11 +63,13 @@ body {
 
 body {
   min-height: 100vh; /* set min hieght to be size of the view port*/
-  width: 80%; /* apply width to entire page to get the spaced look */
+  /* apply width to entire page to get the spaced look */
   font-family: var(--font);
   background-color: var(--background);
   color: var(--text-primary);
   padding-top: 120px;
+  line-height: 1.6;
+  letter-spacing: 0;
 }
 
 a,
@@ -81,6 +83,11 @@ a:active {
 
 ul {
   list-style-type: none;
+}
+
+button {
+  all: unset;
+  cursor: pointer;
 }
 
 header {
@@ -125,17 +132,65 @@ nav {
   display: none;
 }
 
+#theme-checkbox {
+  display: none;
+}
+
+.nav-toggle-label {
+}
+.theme-toggle {
+  position: relative;
+  width: 50px;
+  height: 26px;
+  display: inline-block;
+  cursor: pointer;
+}
 #nav-toggle:checked ~ nav {
   display: block;
 }
 
+main {
+  width: 90%;
+  margin: 0 auto;
+  height: 85vh;
+  background: var(--card-background);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  max-width: 1200px;
+}
+
+section {
+  width: 100%;
+  padding: 20px;
+}
+
+#hero {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#hero-content > p {
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+#hero-btn {
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  background: var(--primary);
+  border: 1px solid var(--border);
+}
+
 @media screen and (min-width: 768px) {
   header {
+    gap: 2rem;
   }
   nav {
     position: relative;
     display: flex; /* enable flexbox */
-    justify-content: center; /* or space-between / flex-end */
+    justify-content: flex-end; /* or space-between / flex-end */
     align-items: center;
     gap: 2rem; /* spacing between items */
     background: none;
@@ -152,5 +207,33 @@ nav {
 
   .nav-toggle-label {
     display: none;
+  }
+
+  .theme-toggle {
+    display: block;
+    order: 999;
+  }
+
+  #hero {
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+    justify-content: space-between;
+  }
+
+  #hero-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 70%;
+  }
+
+  #hero-btn {
+    margin-top: auto;
+    padding: 0.75rem 1.5rem;
+  }
+
+  main {
+    height: 50vh;
   }
 }
