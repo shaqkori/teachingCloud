@@ -7,7 +7,7 @@
 /* root variables for base color scheme */
 :root {
   /* Primary Brand Colors */
-  --primary: #ff9900; /* AWS Orange */
+  --primary: #ffc380; /* AWS Orange */
   --secondary: #f5f5f5; /* Cloud Gray */
   --accent: #007fff; /* Deep Sky Blue */
 
@@ -33,7 +33,7 @@
 
 /* color scheme for dark mode */
 .dark-mode {
-  --primary: #ff9900; /* AWS Orange */
+  --primary: #ffc380; /* AWS Orange */
   --secondary: #1e1e1e; /* Dark Gray */
   --accent: #00bfff; /* Cyan Blue */
 
@@ -152,22 +152,23 @@ nav {
 main {
   width: 90%;
   margin: 0 auto;
-  height: 85vh;
+}
+
+section {
+  width: 100%;
+  padding: 20px;
+  margin: 0 auto;
   background: var(--card-background);
   border: 1px solid var(--border);
   border-radius: 10px;
   max-width: 1200px;
 }
 
-section {
-  width: 100%;
-  padding: 20px;
-}
-
 #hero {
-  height: 50vh;
+  height: auto;
   display: flex;
   flex-direction: column;
+  margin-bottom: 50px;
 }
 
 #hero-content > p {
@@ -181,6 +182,68 @@ section {
   text-align: center;
   background: var(--primary);
   border: 1px solid var(--border);
+}
+
+#selection-container {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto; /* horizontal scroll on small screens */
+  padding: 0.5rem;
+  -webkit-overflow-scrolling: touch;
+  margin-bottom: 20px;
+  justify-content: space-evenly;
+}
+
+.selection-item {
+  flex: 0 0 auto; /* prevents from shrinking */
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+}
+
+#cards-container {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+.cards {
+  min-width: 500px;
+  flex-shrink: 0;
+  scroll-snap-align: start;
+  padding: 20px;
+  box-sizing: border-box;
+  background: var(--card-background);
+  border-radius: 10px;
+  border: 2px solid var(--border);
+}
+
+.card-content {
+  width: 30%;
+  margin: 0 auto;
+}
+
+.item1 {
+  /*selecting items for each of the data cards */
+
+  background: #fcffa8;
+}
+
+.item2 {
+  /*selecting items for each of the data cards */
+  background: #ffbdf5;
+}
+
+.item3 {
+  /*selecting items for each of the data cards */
+  background: #e0dbff;
+}
+
+.item4 {
+  /*selecting items for each of the data cards */
+  background: #dae8fd;
 }
 
 @media screen and (min-width: 768px) {
@@ -234,6 +297,6 @@ section {
   }
 
   main {
-    height: 50vh;
+    height: auto;
   }
 }

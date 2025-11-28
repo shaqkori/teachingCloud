@@ -15,3 +15,8 @@ saved code
 
 
   remember order of importance meadia queries do not overide if styling is changed after it. 
+
+  go back and change max width to be better for larger screens.
+
+
+  style the selection buttons for bigger screens so they fill the container 
