@@ -335,6 +335,11 @@ section {
   display: grid;
   grid-template-column: 1fr;
   gap: 1.5rem;
+  margin-bottom: 50px;
+}
+
+.users {
+  height: auto;
 }
 
 @media screen and (min-width: 768px) {
