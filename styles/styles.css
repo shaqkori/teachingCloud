@@ -7,7 +7,7 @@
 /* root variables for base color scheme */
 :root {
   /* Primary Brand Colors */
-  --primary: #ffc380; /* AWS Orange */
+  --primary: #ff9900; /* AWS Orange */
   --secondary: #f5f5f5; /* Cloud Gray */
   --accent: #007fff; /* Deep Sky Blue */
 
@@ -409,6 +409,51 @@ section {
   color: var(--text-secondary);
 }
 
+.tutorial-card-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.tutorial-card {
+  background: var(--card-background);
+  border: 2px solid var(--border);
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 400px;
+  width: 100%;
+}
+
+.tutorial-card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.tutorial-card-image img {
+  width: 80%; /* adjust size */
+  max-width: 10000px; /* prevents it from getting too big */
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  width: auto;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+}
+
+.tutorial-button {
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  background: var(--primary);
+  border: 1px solid var(--border);
+}
+
 @media screen and (min-width: 768px) {
   header {
     gap: 2rem;
@@ -475,5 +520,27 @@ section {
   }
   .footer-container {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .tutorial-card {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    max-width: 1200px;
+  }
+
+  .tutorial-card-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .tutorial-card-content p {
+    max-width: 600px;
+  }
+  .tutorial-button {
+    margin-left: auto;
   }
 }
