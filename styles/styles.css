@@ -595,6 +595,49 @@ section {
   border-radius: 14px;
 }
 
+.theme-toggle {
+  width: 50px;
+  height: 26px;
+  border-radius: 50px;
+  background: var(--secondary);
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--border);
+}
+
+.theme-toggle input {
+  display: none;
+}
+
+.toggle-icon i {
+  position: absolute;
+  font-size: 18px;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.sun {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.moon {
+  opacity: 0;
+  transform: translateY(10px);
+}
+
+.dark-mode .sun {
+  opacity: 0;
+  transform: translateY(-10px);
+}
+
+.dark-mode .moon {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 @media screen and (min-width: 768px) {
   header {
     gap: 2rem;
