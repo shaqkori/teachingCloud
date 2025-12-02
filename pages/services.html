@@ -129,6 +129,175 @@
           </div>
         </div>
       </section>
+
+      <section class="global">
+        <h2 class="services-title">Global Infrastructure</h2>
+        <div class="container my-5">
+          <div class="row g-4">
+            <!-- Regions -->
+            <div class="col-12 col-md-6">
+              <div class="infra-card p-4">
+                <h4>Regions</h4>
+                <p>
+                  Physical, isolated locations worldwide where AWS clusters
+                  resources for resilience.
+                </p>
+                <a href="#" class="learn-btn">Learn More →</a>
+              </div>
+            </div>
+
+            <!-- Availability Zones -->
+            <div class="col-12 col-md-6">
+              <div class="infra-card p-4">
+                <h4>Availability Zones</h4>
+                <p>
+                  Each region contains multiple data centres with independent
+                  power and networking.
+                </p>
+                <a href="#" class="learn-btn">Learn More →</a>
+              </div>
+            </div>
+
+            <!-- VPC + Subnets -->
+            <div class="col-12 col-md-6">
+              <div class="infra-card p-4">
+                <h4>VPC & Subnets</h4>
+                <p>
+                  Your isolated network environment hosting public and private
+                  subnets.
+                </p>
+                <a href="#" class="learn-btn">Learn More →</a>
+              </div>
+            </div>
+
+            <!-- Load Balancers -->
+            <div class="col-12 col-md-6">
+              <div class="infra-card p-4">
+                <h4>Load Balancers</h4>
+                <p>
+                  Distribute user traffic across your services for high
+                  availability and better performance.
+                </p>
+                <a href="#" class="learn-btn">Learn More →</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="free-tier py-5">
+        <div class="container">
+          <div class="row align-items-center">
+            <!-- Text Column -->
+            <div class="col-12 col-md-8">
+              <h2 class="fw-bold mb-3">AWS Free Tier</h2>
+              <p class="text-muted mb-0">
+                The AWS Free Tier provides customers with the ability to explore
+                and try out AWS services free of charge, up to specified limits
+                for each service. This makes it especially useful for students,
+                beginners, and developers experimenting with cloud solutions.
+              </p>
+            </div>
+
+            <!-- Button Column -->
+            <div
+              class="col-12 col-md-4 d-flex justify-content-md-end mt-3 mt-md-0"
+            >
+              <a href="#" class="btn free-btn px-4 py-2">
+                <button class="tutorial-button">Learn more</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-section py-5">
+        <div class="container text-center">
+          <h2 class="fw-bold mb-3">Get in Touch</h2>
+          <p class="text-muted mb-4">
+            Have questions or need help? Click the button below to contact me.
+          </p>
+
+          <!-- Button trigger modal -->
+          <button
+            type="button"
+            class="btn contact-btn px-4 py-2"
+            data-bs-toggle="modal"
+            data-bs-target="#contactModal"
+          >
+            Contact Me
+          </button>
+        </div>
+      </section>
+
+      <!-- Contact Modal -->
+      <div
+        class="modal fade"
+        id="contactModal"
+        tabindex="-1"
+        aria-labelledby="contactModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title fw-bold" id="contactModalLabel">
+                Contact Me
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+
+            <div class="modal-body">
+              <form>
+                <div class="mb-3">
+                  <label class="form-label">Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Your name"
+                  />
+                </div>
+
+                <div class="mb-3">
+                  <label class="form-label">Email</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="you@example.com"
+                  />
+                </div>
+
+                <div class="mb-3">
+                  <label class="form-label">Message</label>
+                  <textarea
+                    class="form-control"
+                    rows="3"
+                    placeholder="Your message"
+                  ></textarea>
+                </div>
+              </form>
+            </div>
+
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+              <button type="button" class="btn contact-btn">
+                Send Message
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
 
     <footer class="footer">
