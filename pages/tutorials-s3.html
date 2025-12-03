@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Host a Website on Amazon S3</title>
+
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+        <a href="../index.html"> Home </a>
+      </div>
+
+      <input type="checkbox" name="nav-toggle-label" id="nav-toggle" />
+      <label for="nav-toggle" class="nav-toggle-label"> x </label>
+
+      <nav>
+        <ul id="menu">
+          <li><a href="./tutorials.html" id="selected">Tutorials</a></li>
+          <li><a href="./services.html">Service</a></li>
+          <li>daynight</li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="tutorial-page">
+      <section class="tutorial-hero">
+        <h1>Host a Website on Amazon S3</h1>
+        <p>
+          A complete beginner guide to deploying a static website on Amazon S3.
+        </p>
+      </section>
+
+      <section class="tutorial-steps">
+        <h2>Step 1 — Create an S3 Bucket</h2>
+        <p>
+          Go to the AWS Console → S3 → Create bucket. Name your bucket the same
+          as your domain (example: <strong>mywebsite.com</strong>).
+        </p>
+        <img src="../assets/placeholder.png" class="tutorial-img" />
+
+        <h2>Step 2 — Enable Static Website Hosting</h2>
+        <p>
+          Under your bucket settings, enable “Static website hosting” and choose
+          index.html as the root file.
+        </p>
+        <img src="../assets/placeholder.png" class="tutorial-img" />
+
+        <h2>Step 3 — Upload Your Files</h2>
+        <p>Upload your HTML, CSS, JS, and image files.</p>
+
+        <h2>Step 4 — Allow Public Access</h2>
+        <p>Update the bucket policy to allow public read access.</p>
+
+        <h2>Step 5 — Open Your Website</h2>
+        <p>
+          You’ll get a public URL. Open it in your browser — your site is live!
+        </p>
+      </section>
+
+      <a href="./tutorials.html" class="back-button">← Back to Tutorials</a>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-bottom">
+        <p>© 2025 Cloud Learn</p>
+      </div>
+    </footer>
+  </body>
+</html>

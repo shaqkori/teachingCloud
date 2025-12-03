@@ -606,6 +606,124 @@ section {
 .logo a:hover {
   color: var(--primary);
 }
+
+.tutorial-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.tutorial-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.tutorial-button {
+  transition: background-color 0.3s ease;
+}
+
+.tutorial-button:hover {
+  background-color: var(--primary); /* your primary accent color */
+  color: white;
+}
+
+/* tutorials page */
+
+.tutorial-page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1rem 5rem;
+  font-family: "Open Sans", sans-serif;
+}
+
+/* -----------------------------
+   HERO SECTION
+------------------------------ */
+
+.tutorial-hero {
+  text-align: center;
+  padding: 3rem 1rem;
+  margin-bottom: 2rem;
+  background: var(--secondary-bg, #f5f7fa);
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.tutorial-hero h1 {
+  font-size: 2.3rem;
+  margin-bottom: 0.8rem;
+  font-weight: 700;
+}
+
+.tutorial-hero p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+/* -----------------------------
+   STEP CONTENT
+------------------------------ */
+
+.tutorial-steps {
+  margin-top: 2rem;
+}
+
+.tutorial-steps h2 {
+  font-size: 1.6rem;
+  margin-top: 2.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: var(--primary, #007bff);
+}
+
+.tutorial-steps p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+/* Code blocks */
+.tutorial-steps pre {
+  background: #1e1e1e;
+  padding: 1rem 1.3rem;
+  border-radius: 8px;
+  color: #eee;
+  overflow-x: auto;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  font-size: 0.9rem;
+}
+
+/* -----------------------------
+   IMAGES
+------------------------------ */
+
+.tutorial-img {
+  width: 100%;
+  border-radius: 10px;
+  margin: 1rem 0 2rem;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* -----------------------------
+   BACK BUTTON
+------------------------------ */
+
+.back-button {
+  display: inline-block;
+  margin-top: 2rem;
+  background: var(--primary, #007bff);
+  padding: 0.7rem 1.4rem;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+.back-button:hover {
+  background: var(--primary-dark, #0056b3);
+}
+
 @media screen and (min-width: 768px) {
   header {
     gap: 2rem;

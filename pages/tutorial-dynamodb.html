@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DynamoDB Cloud Database</title>
+
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+        <a href="../index.html"> Home </a>
+      </div>
+
+      <input type="checkbox" name="nav-toggle-label" id="nav-toggle" />
+      <label for="nav-toggle" class="nav-toggle-label"> x </label>
+
+      <nav>
+        <ul id="menu">
+          <li><a href="./tutorials.html" id="selected">Tutorials</a></li>
+          <li><a href="./services.html">Service</a></li>
+          <li>daynight</li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="tutorial-page">
+      <section class="tutorial-hero">
+        <h1>Create a DynamoDB Database</h1>
+        <p>Learn cloud-based NoSQL storage with AWS DynamoDB.</p>
+      </section>
+
+      <section class="tutorial-steps">
+        <h2>Step 1 — Create a DynamoDB Table</h2>
+        <p>
+          Open the AWS Console → DynamoDB → Create table. Set a primary key
+          (e.g., <strong>id</strong>).
+        </p>
+        <img src="../assets/placeholder.png" class="tutorial-img" />
+
+        <h2>Step 2 — Insert Items</h2>
+        <p>Use the “Explore Table Items” feature to add test data.</p>
+
+        <h2>Step 3 — Query & Scan Data</h2>
+        <p>
+          DynamoDB supports two read methods: Query (fast) and Scan (search
+          all).
+        </p>
+
+        <h2>Step 4 — Connect With a Lambda Function</h2>
+        <pre><code>
+// Node.js example
+const AWS = require("aws-sdk");
+const db = new AWS.DynamoDB.DocumentClient();
+
+exports.handler = async () => {
+  const params = { TableName: "MyTable" };
+  const data = await db.scan(params).promise();
+  return data.Items;
+};
+    </code></pre>
+
+        <h2>Step 5 — Use It in Your App</h2>
+        <p>Your API can now read/write data from DynamoDB automatically.</p>
+      </section>
+
+      <a href="./tutorials.html" class="back-button">← Back to Tutorials</a>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-bottom">
+        <p>© 2025 Cloud Learn</p>
+      </div>
+    </footer>
+  </body>
+</html>

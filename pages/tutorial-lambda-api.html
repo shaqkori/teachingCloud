@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Serverless REST API with Lambda</title>
+
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+        <a href="../index.html"> Home </a>
+      </div>
+
+      <input type="checkbox" name="nav-toggle-label" id="nav-toggle" />
+      <label for="nav-toggle" class="nav-toggle-label"> x </label>
+
+      <nav>
+        <ul id="menu">
+          <li><a href="./tutorials.html" id="selected">Tutorials</a></li>
+          <li><a href="./services.html">Service</a></li>
+          <li>daynight</li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="tutorial-page">
+      <section class="tutorial-hero">
+        <h1>Build a Serverless REST API</h1>
+        <p>
+          Learn how to build a fully serverless API using AWS Lambda and API
+          Gateway.
+        </p>
+      </section>
+
+      <section class="tutorial-steps">
+        <h2>Step 1 — Create a Lambda Function</h2>
+        <p>
+          Open the AWS Lambda console and create a function using Node.js or
+          Python.
+        </p>
+        <img src="../assets/placeholder.png" class="tutorial-img" />
+
+        <h2>Step 2 — Write Your API Logic</h2>
+        <pre><code>
+// Example Node.js Lambda
+exports.handler = async (event) => {
+  return {
+    statusCode: 200,
+    body: JSON.stringify({ message: "Hello from Lambda!" })
+  };
+};
+    </code></pre>
+
+        <h2>Step 3 — Create an API Gateway</h2>
+        <p>Connect your Lambda to an HTTP API route (e.g., GET /hello).</p>
+
+        <h2>Step 4 — Deploy the API</h2>
+        <p>Deploy your API and copy the Invoke URL.</p>
+
+        <h2>Step 5 — Test in Your Browser</h2>
+        <p>Visit the URL and see your API response.</p>
+      </section>
+
+      <a href="./tutorials.html" class="back-button">← Back to Tutorials</a>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-bottom">
+        <p>© 2025 Cloud Learn</p>
+      </div>
+    </footer>
+  </body>
+</html>
