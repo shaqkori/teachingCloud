@@ -335,7 +335,7 @@ section {
 
 .deployment-models {
   display: grid;
-  grid-template-column: 1fr;
+  grid-template-columns: 1fr;
   gap: 1.5rem;
   margin-bottom: 50px;
 }
@@ -763,7 +763,7 @@ section {
     display: flex;
     margin: 0 auto;
     gap: 2rem;
-    flex: end;
+    justify-content: end;
   }
 
   .nav-toggle-label {
