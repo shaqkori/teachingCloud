@@ -37,13 +37,33 @@
     </header>
 
     <main>
-      <section class="tutorial-card-container">
+      <section id="hero">
+        <div id="hero-content">
+          <h1 id="hero-title">Start Your Cloud Journey Today</h1>
+
+          <p>
+            Explore easy, practical tutorials designed to help you understand
+            cloud technology by doing. Build real projects like S3 websites,
+            DynamoDB databases, and serverless APIs—no prior experience needed.
+            Learn the cloud one project at a time.
+          </p>
+        </div>
+
+        <button class="button" id="hero-btn">
+          <a href="#tutorials"> Learn Today </a>
+        </button>
+      </section>
+
+      <section class="tutorial-card-container" id="tutorials">
         <div
           class="tutorial-card"
           onclick="window.location.href='./aws-account-setup.html'"
         >
           <div class="tutorial-card-image">
-            <img src="../assets/placeholder.png" alt="" />
+            <img
+              src="../assets/Res_Authenticated-User_48_Light.webp"
+              alt=" A user icon with a checkmark next to it "
+            />
           </div>
           <div class="tutorial-card-content">
             <p>
@@ -59,7 +79,10 @@
           onclick="window.location.href='./tutorials-s3.html'"
         >
           <div class="tutorial-card-image">
-            <img src="../assets/placeholder.png" alt="" />
+            <img
+              src="../assets/Res_Amazon-Simple-Storage-Service_Bucket_48.webp"
+              alt="A green bucket representing S3 storage"
+            />
           </div>
           <div class="tutorial-card-content">
             <p>
@@ -76,7 +99,10 @@
           onclick="window.location.href='./tutorial-lambda-api.html'"
         >
           <div class="tutorial-card-image">
-            <img src="../assets/placeholder.png" alt="" />
+            <img
+              src="../assets/Res_AWS-Lambda_Lambda-Function_48.webp"
+              alt="An orange lambda symbol representing AWS Lambda"
+            />
           </div>
           <div class="tutorial-card-content">
             <p>
@@ -93,7 +119,10 @@
           onclick="window.location.href='./tutorial-dynamodb.html'"
         >
           <div class="tutorial-card-image">
-            <img src="../assets/placeholder.png" alt="" />
+            <img
+              src="../assets/Res_Amazon-DocumentDB_Elastic-Clusters_48.webp"
+              alt="A purple database symbol representing DynamoDB"
+            />
           </div>
           <div class="tutorial-card-content">
             <p>

@@ -116,7 +116,6 @@ header {
 
 nav {
   position: absolute;
-  background: white;
   box-shadow: 0 2px 2px #3a3a3a;
   width: 100%;
   left: 0;
@@ -124,7 +123,6 @@ nav {
   display: none;
   top: 100%;
   background-color: var(--card-background);
-  border-radius: 10px;
 }
 #menu {
 }
@@ -171,6 +169,7 @@ section {
   display: flex;
   flex-direction: column;
   margin-bottom: 50px;
+  font-size: 1.5rem;
 }
 
 #hero-content > p {
@@ -259,8 +258,10 @@ section {
 
 .card-content img {
   width: 80%; /* adjust size */
-  max-width: 10000px; /* prevents it from getting too big */
+  max-width: 250px; /* prevents it from getting too big */
   max-height: 200px;
+  min-height: 250px;
+  min-width: 250px;
   object-fit: cover;
   border-radius: 10px;
   width: auto;
@@ -273,7 +274,7 @@ section {
 }
 
 .flip-card {
-  background-color: var(--card-background-secondary);
+  background-color: var(--background);
   border: 1px solid black;
   border-radius: 10px;
   padding: 10px;
@@ -439,6 +440,8 @@ section {
   width: 80%; /* adjust size */
   max-width: 10000px; /* prevents it from getting too big */
   max-height: 200px;
+  min-height: 250px;
+  min-width: 150px;
   object-fit: cover;
   border-radius: 10px;
   width: auto;
@@ -512,6 +515,8 @@ section {
   overflow: hidden;
   color: var(--text-secondary);
   transition: max-height 0.35s ease, padding 0.35s ease;
+  max-width: 900px;
+  font-size: 1.5rem;
 }
 
 /* Expanded state */
