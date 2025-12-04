@@ -665,6 +665,7 @@ section {
 
 .tutorial-steps {
   margin-top: 2rem;
+  margin-bottom: 50px;
 }
 
 .tutorial-steps h2 {
@@ -724,6 +725,19 @@ section {
   background: var(--primary-dark, #0056b3);
 }
 
+.tutorial-help {
+  margin-top: 3rem;
+  padding: 2rem;
+  border-radius: 10px;
+}
+.tutorial-help h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  font-weight: var(--font-weight-bold);
+}
+.tutorial-help p a {
+  color: var(--primary, #007bff);
+}
 @media screen and (min-width: 768px) {
   header {
     gap: 2rem;
