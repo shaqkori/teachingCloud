@@ -434,6 +434,7 @@ section {
   gap: 1rem;
   align-items: center;
   justify-content: center;
+  font-size: 1.5rem;
 }
 
 .tutorial-card-image img {
