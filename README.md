@@ -38,7 +38,7 @@ An informational page introducing cloud to beginners looking to learn.
 ## Deployment
 
 - This website is deployed and hosted through GitHub Pages.
-- Changes and modifications all happend through Github and are deployed through GitHub actions.
+- Changes and modifications all happen through Github and are deployed through GitHub actions.
 
 ## Responsivity
 
@@ -55,6 +55,8 @@ Adaptive images are used so the images resize automatically with rules such as m
 For larger screens simple meadia queries where used to modify the page layout such that everything is not cramped to just accomodate mobile views. Such as the the nav element with the nav items. Also display: grid is utilised fo the flip card elements to create a 2 by 2 grid on a larger screen and ensures the elements keep shape and fit the container so the content is readable.
 
 ## Validation and Performance testing
+
+See [Here](./validation.md) for Performance testing and validation results
 
 ## Bugs and Errors
 
