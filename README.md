@@ -2,7 +2,7 @@
 
 An informational page introducing cloud to beginners looking to learn.
 
-. [Here](https://shaqkori.github.io/teachingCloud/) is a live preview of the website
+- [Here](https://shaqkori.github.io/teachingCloud/) is a live preview of the website
 
 ## Table of Contents
 
@@ -16,7 +16,7 @@ An informational page introducing cloud to beginners looking to learn.
 - [Decleration of AI](#decleration-of-ai)
 - [Colour Pallete](#colour-pallete)
 - [Wire frames](#wire-frames)
-- [UX / UI](#ui--ix)
+- [UX / UI](#ui--ux)
 - [Updates](#updates)
 
 ## Project Goals
@@ -29,11 +29,11 @@ An informational page introducing cloud to beginners looking to learn.
 
 ## Features and Benefits
 
-- ** Accessible UI **
-- ** AWS Tutorials **
-- ** Hands on Learning **
-- ** Modern Tech Stack **
-- ** Helps beginners learn through simplified explanations**
+- **Accessible UI**
+- **AWS Tutorials**
+- **Hands on Learning**
+- **Modern Tech Stack**
+- **Helps beginners learn through simplified explanations**
 
 ## Deployment
 
@@ -58,16 +58,60 @@ For larger screens simple meadia queries where used to modify the page layout su
 
 See [Here](./validation.md) for Performance testing and validation results
 
+### Screen shots - Mobile
+
+![MobileScreenShots](./screenshots/mobileview-1.png)
+![MobileScreenShots](./screenshots/mobileview-2.png)
+![MobileScreenShots](./screenshots/mobileview-3.png)
+![MobileScreenShots](./screenshots/mobileview-4.png)
+![MobileScreenShots](./screenshots/mobileview-5.png)
+![MobileScreenShots](./screenshots/mobileview-6.png)
+![MobileScreenShots](./screenshots/mobileview-7.png)
+![MobileScreenShots](./screenshots/mobileview-8.png)
+
+### Screen shots - Desktop
+
+![DesktopScreenShots](./screenshots/desktopView-1.png)
+![DesktopScreenShots](./screenshots/desktopView-2.png)
+![DesktopScreenShots](./screenshots/desktopView-3.png)
+![DesktopScreenShots](./screenshots/desktopView-4.png)
+![DesktopScreenShots](./screenshots/desktopView-5.png)
+![DesktopScreenShots](./screenshots/desktopView-6.png)
+![DesktopScreenShots](./screenshots/desktopView-7.png)
+
 ## Bugs and Errors
 
 ## Images
 
+The Stock images from the website where taken from [pixabay](https://pixabay.com/). For the images for the tutorial they were screenshots taken by my self of the AWS console.
+
 ## Decleration of AI
+
+The use of AI was featured in the project for the genration of the text content which allows me to focus on just creating and styling the website itself. Also AI played a role in assiting in styling seen in the accordian section on the services page.
 
 ## Colour Pallete
 
+The color scheme for the website follows AWS main page colours with the white backgrounds and the solid orange for the buttons.
+
+![ColorSchme](./screenshots/colour%20scheme.png)
+
 ## Wire frames
 
-## UI / IX
+Mock up designs where created to structure the development of the page using figma. Whilst some designs where not final it served as a baseline of how the website was intended to look.
 
-## Updates
+![FigmaWireframes](./screenshots/figma1.png)
+![FigmaWireframes](./screenshots/figma2.png)
+![FigmaWireframes](./screenshots/figma3.png)
+![FigmaWireframes](./screenshots/figma4.png)
+![FigmaWireframes](./screenshots/figma5.png)
+![FigmaWireframes](./screenshots/figma6.png)
+
+## UI / UX
+
+This design follows the key standards
+
+The design of this website focuses heavily on clarity, simplicity, and accessibility to ensure beginners can navigate and learn cloud concepts without confusion. The user interface is intentionally minimalistic, using clean layouts, high-contrast colours, and consistent spacing to reduce cognitive load. Each section is structured logically so users can follow tutorials step-by-step without feeling overwhelmed.
+
+From a UX perspective, the site uses predictable navigation patterns, clear visual hierarchy, and mobile-friendly layouts to ensure users can interact with the content on any device. Buttons, cards, and icons follow a consistent style and affordance, helping users understand where to click and what actions they can take. Tutorials are broken into digestible sections, supported by visuals and code examples to guide learners smoothly through each task.
+
+The overall goal is to provide a friendly and intuitive learning experience—one where users don't have to figure out how the website works so they can instead focus on learning cloud technology efficiently.
