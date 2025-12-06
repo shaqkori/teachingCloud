@@ -81,9 +81,15 @@ See [Here](./validation.md) for Performance testing and validation results
 
 ## Bugs and Errors
 
+A recurring error in validation was putting an anchor tag as a decendant of the button class. To resolve this i used javascripts 'onclick="window.location.href=' to map to the defined page.
+
 ## Images
 
 The Stock images from the website where taken from [pixabay](https://pixabay.com/). For the images for the tutorial they were screenshots taken by my self of the AWS console.
+
+## Reference
+
+For the flip card elemen [this](https://www.youtube.com/watch?v=OV8MVmtgmoY) tutorial was followed to achieve the result.
 
 ## Decleration of AI
 
@@ -114,4 +120,4 @@ The design of this website focuses heavily on clarity, simplicity, and accessibi
 
 From a UX perspective, the site uses predictable navigation patterns, clear visual hierarchy, and mobile-friendly layouts to ensure users can interact with the content on any device. Buttons, cards, and icons follow a consistent style and affordance, helping users understand where to click and what actions they can take. Tutorials are broken into digestible sections, supported by visuals and code examples to guide learners smoothly through each task.
 
-The overall goal is to provide a friendly and intuitive learning experience—one where users don't have to figure out how the website works so they can instead focus on learning cloud technology efficiently.
+The overall goal is to provide a friendly and intuitive learning experience, one where users don't have to figure out how the website works so they can instead focus on learning cloud technology efficiently.

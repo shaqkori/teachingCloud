@@ -55,7 +55,7 @@
         <button
           class="button"
           id="hero-btn"
-          onclick="window.location.href='./pages/tutorials.html'"
+          onclick="window.location.href='https://docs.aws.amazon.com/'"
         >
           Learn Today
         </button>
@@ -207,7 +207,12 @@
             <div
               class="col-12 col-md-4 d-flex justify-content-md-end mt-3 mt-md-0"
             >
-              <button class="tutorial-button">Learn more</button>
+              <button
+                class="tutorial-button"
+                onclick="https://aws.amazon.com/free/"
+              >
+                Learn more
+              </button>
             </div>
           </div>
         </div>
@@ -339,9 +344,13 @@
     </footer>
 
     <script>
+      // Select all accordion header elements
       document.querySelectorAll(".acc-header").forEach((button) => {
+        // Add a click event to each header
         button.addEventListener("click", () => {
+          // Get the parent .acc-item (the full accordion block)
           const item = button.parentElement;
+          // Toggle the "active" class to open/close the item
           item.classList.toggle("active");
         });
       });

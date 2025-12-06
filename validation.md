@@ -20,7 +20,7 @@
 
 ## CSS Validation
 
-The validation for the css returned no errors and a few error which can be ignored.
+The validation for the css returned no errors and a few warnings which can be ignored as they are related to the bootstrap code.
 ![CSS](./screenshots/css-validator.png)
 
 ## HTML Validation

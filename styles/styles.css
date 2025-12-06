@@ -15,7 +15,6 @@
   --text-primary: #000000; /* Black (21:1 against all backgrounds) */
   --text-secondary: #1c1c1c; /* Very Dark Grey (16.7:1 against #f2f4f7) */
 
-  /* Backgrounds (No change needed for backgrounds themselves) */
   --background: #f2f4f7;
   --card-background: #ffffff;
   --card-background-secondary: #e1e5eb; /* soft grey with contrast */
@@ -50,6 +49,7 @@
   --border: #444444;
 }
 
+/* Resets the styling of the page */
 * {
   margin: 0;
   padding: 0;
@@ -81,6 +81,7 @@ a:active {
   text-decoration: none !important;
   color: var(--text-primary);
 }
+/* Resets styling of a tag so its not blue and underlined */
 
 ul {
   list-style-type: none;
@@ -90,12 +91,13 @@ button {
   all: unset;
   cursor: pointer;
 }
+/*resets styling for button  sets the cursor to pointer when clicked*/
 
 header {
   position: fixed; /* floating nav */
   top: 25px;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-50%); /*sets nav bar to center of the screen*/
 
   width: 90%;
   max-width: 2400px;
@@ -105,22 +107,22 @@ header {
   border-radius: 0;
   border: 1px solid var(--border);
 
-  display: flex;
+  display: flex; /* keeps the items in shape*/
   justify-content: space-between;
   align-items: center;
 
-  z-index: 999;
+  z-index: 999; /*puts it on top of all the elemements */
 }
 
 /* hides the toggle menu only shows the label */
 
 nav {
-  position: absolute;
+  position: absolute; /* sets the nav so i can't move */
   box-shadow: 0 2px 2px #3a3a3a;
   width: 100%;
   left: 0;
   padding: 0 1rem;
-  display: none;
+  display: none; /* not displayed unless lable toggled*/
   top: 100%;
   background-color: var(--card-background);
 }
@@ -132,6 +134,7 @@ nav {
 }
 
 #theme-checkbox {
+  /* removes the checkbox */
   display: none;
 }
 
@@ -146,22 +149,25 @@ nav {
   cursor: pointer;
 }
 #nav-toggle:checked ~ nav {
+  /* displayes nav element when toggel checked */
   display: block;
 }
 
 main {
+  /* centersall the content in the middle of page */
   width: 90%;
   margin: 0 auto;
 }
 
 section {
-  width: 100%;
+  /* contains all the content in card */
+  width: 100%; /*takes max-widthof the container */
   padding: 20px;
   margin: 0 auto;
   background: var(--card-background);
   border: 1px solid var(--border);
   border-radius: 10px;
-  max-width: 2400px;
+  max-width: 2400px; /* responive for biggest screesn so it doesnt look to cramped*/
 }
 
 #hero {
@@ -209,15 +215,15 @@ section {
 #cards-container {
   display: flex;
   gap: 1rem;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  -webkit-overflow-scrolling: touch;
+  overflow-x: auto; /* over flows horizontally */
+  scroll-snap-type: x mandatory; /*locks it to one card on page on smaller screens and it doesn't overscroll*/
+  -webkit-overflow-scrolling: touch; /*ios/safar based scrolling for more smooth actions*/
 }
 
 .cards {
-  min-width: 300px;
-  flex-shrink: 0;
-  scroll-snap-align: start;
+  min-width: 300px; /*card at least 300px wide*/
+  flex-shrink: 0; /*stops card from shrinking in container */
+  scroll-snap-align: start; /*snaps card into position when scrolling*/
   padding: 20px;
   box-sizing: border-box;
   background: var(--card-background);
@@ -226,10 +232,10 @@ section {
 }
 
 .card-content {
-  max-width: 250px;
+  max-width: 250px; /* content doesnt increase over 250px */
   display: flex;
-  flex-direction: column;
-  gap: 2rem;
+  flex-direction: column; /*content stacks on smaller screens*/
+  gap: 2rem; /*spacing between elements */
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -270,7 +276,7 @@ section {
 }
 
 .flip-card-container:hover .flip-card {
-  transform: rotateY(180deg);
+  transform: rotateY(180deg); /* flips card 180degress to show back of card */
 }
 
 .flip-card {
@@ -280,31 +286,38 @@ section {
   padding: 10px;
   width: 100%;
   height: 100%;
-  transform-style: preserve-3d;
-  transition: transform 0.5s ease;
+  transform-style: preserve-3d; /*allows for both sides of the card to exist in 3d space*/
+  transition: transform 0.5s ease; /* smooth transition animation */
 }
 
+/*wrapper for card */
 .flip-card-container {
   position: relative;
   width: auto;
   height: 400px;
 }
 
+/*front side of card*/
 .front {
   position: relative;
   width: 100%;
   height: 100%;
-  backface-visibility: hidden;
+  backface-visibility: hidden; /* prevents from showing when rotated */
 }
 
+/*back side of card*/
 .back {
   position: absolute;
   top: 0;
   left: 0;
   width: auto;
   height: 100%;
-  backface-visibility: hidden;
-  transform: rotateY(180deg);
+  backface-visibility: hidden; /*initialy hidden*/
+  transform: rotateY(
+    180deg
+  ); /*rotates the back so when fliped this side becomes visible*/
+
+  /*layout for centered content*/
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -313,6 +326,7 @@ section {
   gap: 1rem;
 }
 
+/*styling for content within the card*/
 .flip-card-content {
   display: flex;
   flex-direction: column;
@@ -334,18 +348,18 @@ section {
 }
 
 .deployment-models {
-  display: grid;
-  grid-template-columns: 1fr;
+  display: grid; /* keeps element in grid column on smaller screens but allows it to expand to 2 by 2 on larger screens*/
+  grid-template-columns: 1fr; /*1 row */
   gap: 1.5rem;
   margin-bottom: 50px;
 }
 
 .users {
-  height: auto;
+  height: auto; /*fills hte hieght based on the content within */
 }
 
 .footer {
-  width: 100%;
+  width: 100%; /*fills width*/
   margin-top: 50px;
   padding: 40px 20px;
   background: var(--card-background);
@@ -353,6 +367,7 @@ section {
   border-radius: 10px 10px 0 0;
 }
 
+/*contains the footer */
 .footer-container {
   max-width: 1200px;
   margin: 0 auto;
@@ -441,13 +456,13 @@ section {
   width: 80%; /* adjust size */
   max-width: 10000px; /* prevents it from getting too big */
   max-height: 200px;
-  min-height: 250px;
+  min-height: 250px; /* set it so it maintains baseline shape */
   min-width: 150px;
-  object-fit: cover;
+  object-fit: cover; /*whole image fits into the container */
   border-radius: 10px;
   width: auto;
   display: block;
-  margin: 0 auto;
+  margin: 0 auto; /*centers image within container*/
   margin-bottom: 1rem;
 }
 
@@ -465,6 +480,7 @@ section {
   margin: 0 auto;
 }
 
+/* Stack accordion items vertically with spacing */
 .custom-accordion {
   display: flex;
   flex-direction: column;
@@ -476,10 +492,11 @@ section {
   background: var(--card-background);
   border: 1px solid var(--border);
   border-radius: 10px;
-  overflow: hidden;
+  overflow: hidden; /* Ensures hidden content stays hidden when collapsed */
 }
 
 /* Header */
+/* Layout: text on left, icon on right */
 .acc-header {
   width: 100%;
   background: var(--card-background);
@@ -498,6 +515,7 @@ section {
 }
 
 /* Hover */
+/* Slight background change when hovering */
 .acc-header:hover {
   background: var(--card-background-secondary);
 }
@@ -506,13 +524,13 @@ section {
 .acc-icon {
   font-size: 1.5rem;
   color: var(--text-secondary);
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease; /* rotates on open */
 }
 
-/* Content */
+/* Hidden content section */
 .acc-content {
-  max-height: 0;
-  padding: 0 1.2rem;
+  max-height: 0; /* collapsed state */
+  padding: 0 1.2rem; /* only side padding so it doesn’t flash on collapse */
   overflow: hidden;
   color: var(--text-secondary);
   transition: max-height 0.35s ease, padding 0.35s ease;
@@ -520,14 +538,15 @@ section {
   font-size: 1.5rem;
 }
 
-/* Expanded state */
+/* Expanded state styling */
+/* Triggered when .active is added via JS */
 .acc-item.active .acc-content {
-  max-height: 500px;
+  max-height: 500px; /* reveals content with animation */
   padding: 1rem 1.2rem;
 }
 
 .acc-item.active .acc-icon {
-  transform: rotate(45deg);
+  transform: rotate(45deg); /* Rotate the icon (e.g., + → ×) when open */
 }
 
 .services-subtitle {
@@ -594,7 +613,7 @@ section {
 }
 
 .contact-btn:hover {
-  background: #ff9f40;
+  background: var(--primary); /*hover styles*/
 }
 
 .contact-section {
@@ -749,10 +768,11 @@ section {
   header {
     gap: 2rem;
   }
+  /*nav elements for larger screen*/
   nav {
     position: relative;
-    display: flex;
-    justify-content: flex-end; /* or space-between / flex-end */
+    display: flex; /*contend link horizontal list rather than stacked */
+    justify-content: flex-end; /* pushed to end of the container */
     align-items: center;
     gap: 2rem; /* spacing between items */
     background: none;
@@ -768,7 +788,7 @@ section {
   }
 
   .nav-toggle-label {
-    display: none;
+    display: none; /*removes lable on larger screens */
   }
 
   .theme-toggle {
@@ -777,7 +797,7 @@ section {
   }
 
   #hero {
-    flex-direction: row;
+    flex-direction: row; /*sets content to be side by side on larger screens */
     align-items: center;
     gap: 2rem;
     justify-content: space-between;
@@ -785,32 +805,35 @@ section {
 
   #hero-content {
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /*sets content to be side by side on larger screens */
     gap: 2rem;
     width: 70%;
   }
 
   #hero-btn {
-    margin-top: auto;
+    margin-top: auto; /*sets button to be same width of content rather than filling the container */
     padding: 0.75rem 1.5rem;
   }
 
   main {
-    height: auto;
+    height: auto; /*set hieght of screen based on content*/
   }
 
   .card-content {
-    flex-direction: row;
-    max-width: 600px;
+    flex-direction: row; /*sets card to be row */
+    max-width: 600px; /* doesn't expand over 600px*/
     align-items: center;
     justify-content: center;
   }
 
   .deployment-models {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(
+      2,
+      1fr
+    ); /* cards set to 2 by 2 container on larger screens */
   }
   .footer-container {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr); /* puts content in 3 columns*/
   }
 
   .tutorial-card {
@@ -820,16 +843,16 @@ section {
     align-items: center;
     justify-content: space-around;
     width: 100%;
-    max-width: 2400px;
+    max-width: 2400px; /*works for larger screens*/
   }
 
   .tutorial-card-content {
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /*content next to each other instead of stacked */
   }
 
   .tutorial-card-content p {
-    max-width: 600px;
+    max-width: 600px; /* doesn't expand over 600 px */
   }
   .tutorial-button {
     margin-left: auto;
