@@ -27,16 +27,20 @@
     <header>
       <div class="logo">
         <a href="./index.html"> Home </a>
+        <!-- Logo tag on nav header linking to the top of index page -->
       </div>
 
       <input type="checkbox" name="nav-toggle-label" id="nav-toggle" />
+      <!-- Hamburger menu for mobile view -->
       <label for="nav-toggle" class="nav-toggle-label"> ☰ </label>
 
       <nav>
         <ul id="menu">
           <li><a href="./pages/tutorials.html">Tutorials</a></li>
+          <!-- Navigation link to tutorials page -->
           <li><a href="./pages/services.html">Service</a></li>
           <li>daynight</li>
+          <!-- Placeholder for future navigation item idea was to have a dark and light version of webpage  -->
         </ul>
       </nav>
     </header>
@@ -63,6 +67,7 @@
           id="hero-btn"
           onclick="window.location.href='./pages/tutorials.html'"
         >
+          <!-- informational section meant to take you to the tutorials page -->
           Learn Today
         </button>
       </section>
@@ -71,8 +76,10 @@
         <h2 class="services-title">Main advantages of Cloud Technology</h2>
         <div id="selection-container">
           <div class="selection-item item1" data-card="card1">
+            <!-- Carrosel where colors corrospond with card data  -->
             Scalability & Flexibility
           </div>
+          <!-- data card element meant to selection item to card for a hover feature where the selected card highlights the corrosponding color mapped to the item property. -->
           <div class="selection-item item2" data-card="card2">
             Cost Efficiency
           </div>
@@ -85,6 +92,7 @@
         </div>
 
         <div id="cards-container">
+          <!-- Cards container holding the different cards for each selection item -->
           <div class="cards item1" id="card1">
             <div class="card-content">
               <img
@@ -92,6 +100,7 @@
                 src="./assets/shubham-dhage-km9umcj61Ow-unsplash.webp"
                 alt="Mesh of blocks representing cloud scalability"
               />
+              <!-- Lazy loading for performance optimisation -->
 
               <p>
                 Effortlessly scale your applications up or down to match
@@ -158,7 +167,9 @@
       </section>
       <section><h2 class="services-title">Deployment Models</h2></section>
       <section class="deployment-models">
+        <!-- Flip card section explaining the different deployment models of cloud computing -->
         <div class="flip-card-container">
+          <!--  Two faces of card defined and when the user hovers/ clicks the rotates to changes content shows -->
           <div class="flip-card">
             <div class="front">
               <h1 class="front-title">Infrastructure as a service</h1>
@@ -245,6 +256,7 @@
         <h4 class="services-subtitle">
           How major companies leverage cloud computing
         </h4>
+        <!-- bootstrap carrosel auto scrolling -->
 
         <div
           id="carouselExampleSlidesOnly"
