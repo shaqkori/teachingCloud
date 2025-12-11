@@ -215,6 +215,7 @@ section {
 #cards-container {
   display: flex;
   gap: 1rem;
+  justify-content: center;
   overflow-x: auto; /* over flows horizontally */
   scroll-snap-type: x mandatory; /*locks it to one card on page on smaller screens and it doesn't overscroll*/
   -webkit-overflow-scrolling: touch; /*ios/safar based scrolling for more smooth actions*/
