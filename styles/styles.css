@@ -366,8 +366,6 @@ section {
   background: var(--card-background);
   border-top: 1px solid var(--border);
   border-radius: 10px 10px 0 0;
-  position: fixed;
-  bottom: 0;
 }
 
 /*contains the footer */
